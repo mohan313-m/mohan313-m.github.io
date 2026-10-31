@@ -119,7 +119,9 @@
   }
 }
     .contact-links .whatsapp-link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   background: #25D366;
   color: white;
   padding: 12px 20px;
@@ -133,10 +135,9 @@
   background: #1da851;
   transform: translateY(-2px);
 }
-    .whatsapp-icon {
-  font-size: 20px;
-  margin-right: 8px;
-  vertical-align: middle;
+
+.whatsapp-icon {
+  font-size: 16px;
 }
   </style>
 </head>
@@ -246,7 +247,15 @@
    target="_blank"
    rel="noopener noreferrer"
    class="whatsapp-link">
-  <span class="whatsapp-icon">◉</span>
+
+  <svg xmlns="http://www.w3.org/2000/svg"
+       width="22" height="22"
+       viewBox="0 0 24 24"
+       fill="currentColor"
+       aria-hidden="true">
+    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.33 4.96L2 22l5.27-1.38a9.9 9.9 0 0 0 4.77 1.22h.01c5.46 0 9.91-4.45 9.91-9.91A9.86 9.86 0 0 0 12.04 2zm0 18.16h-.01a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.13.82.84-3.05-.2-.31a8.2 8.2 0 1 1 6.98 3.86zm4.5-6.14c-.25-.12-1.48-.73-1.71-.81-.23-.08-.4-.12-.57.12-.17.25-.65.81-.8.98-.15.17-.3.19-.55.06-.25-.12-1.05-.39-2-.1-.74-.65-1.23-1.45-1.37-1.7-.14-.25-.01-.39.11-.52.11-.11.25-.29.37-.43.12-.15.16-.25.25-.42.08-.17.04-.32-.02-.44-.06-.12-.57-1.37-.78-1.88-.2-.5-.41-.43-.57-.44h-.49c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.43 1.03 2.6c.12.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.52.6.19 1.15.16 1.58.1.48-.07 1.48-.61 1.69-1.2.21-.59.21-1.1.15-1.2-.06-.1-.23-.16-.48-.28z"/>
+  </svg>
+
   Chat with me on WhatsApp
 </a>
 
