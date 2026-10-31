@@ -118,7 +118,8 @@
     max-width: 160px;
   }
 }
-    .contact-links .whatsapp-link {
+   
+.contact-links .whatsapp-link {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -129,6 +130,7 @@
   text-decoration: none;
   font-weight: 600;
   transition: 0.3s ease;
+  box-shadow: 0 3px 10px rgba(37, 211, 102, 0.25);
 }
 
 .contact-links .whatsapp-link:hover {
@@ -136,8 +138,10 @@
   transform: translateY(-2px);
 }
 
-.whatsapp-icon {
-  font-size: 16px;
+.contact-links .whatsapp-link svg {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
 }
   </style>
 </head>
