@@ -3,7 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mohan Shrestha — law, legal research, writing, and technology.">
+  <meta name="description" content="Mohan Shrestha — law student, legal researcher, and writer interested in human rights, social justice, public policy, and technology.">
+  <meta name="author" content="Mohan Shrestha">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mohan Shrestha | Law, Research & Technology">
+  <meta property="og:description" content="Explore Mohan Shrestha's academic journey, legal research interests, writing, and professional activities.">
+  <meta property="og:url" content="https://mohanshrestha07.com.np/">
+  <meta name="twitter:card" content="summary">
   <meta name="theme-color" content="#10284a">
   <title>Mohan Shrestha | Law, Research & Technology</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -105,116 +111,113 @@
     padding:18px;
   }
 }
-  .site-logo {
-  height: 65px;
-  width: auto;
-  max-width: 240px;
-  object-fit: contain;
-}
 
-@media (max-width: 600px) {
-  .site-logo {
-    height: 40px;
-    max-width: 160px;
-  }
-}
-   
-.contact-links .whatsapp-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: #25D366;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.3s ease;
-  box-shadow: 0 3px 10px rgba(37, 211, 102, 0.25);
-}
+    /* Logo */
+    .site-logo {
+      display: block;
+      height: 65px;
+      width: auto;
+      max-width: 240px;
+      object-fit: contain;
+    }
 
-.contact-links .whatsapp-link:hover {
-  background: #1da851;
-  transform: translateY(-2px);
-}
+    /* Contact links */
+    .contact-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      min-height: 48px;
+      padding: 12px 16px;
+      border: 1px solid #ffffff30;
+      border-radius: 9px;
+      color: #fff;
+      font-size: .9rem;
+      font-weight: 600;
+      overflow-wrap: anywhere;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, .16);
+      transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+    }
 
-.contact-links .whatsapp-link svg {
-  width: 22px;
-  height: 22px;
-  flex-shrink: 0;
-}
-    /* Email Button - Navy Blue */
-.contact-links .contact-item:first-child {
-  background: #17365D;
-  color: #ffffff;
-  border-color: #17365D;
-  box-shadow: 0 3px 10px rgba(23, 54, 93, 0.20);
-}
+    .contact-links a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 7px 18px rgba(0, 0, 0, .24);
+    }
 
-.contact-links .contact-item:first-child:hover {
-  background: #102944;
-  border-color: #102944;
-  color: #ffffff;
-  transform: translateY(-2px);
-}
+    .contact-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 22px;
+      width: 22px;
+      font-size: 1.15rem;
+      font-weight: 700;
+      line-height: 1;
+    }
 
-.contact-links .contact-item:first-child .contact-icon {
-  color: #ffffff;
-}
-    /* Phone Icon - Sky Blue */
-.contact-links .contact-item:nth-child(2) .contact-icon {
-  color: #38BDF8;
-}
-    
-/* Professional Shadow for All Contact Links */
-.contact-links .contact-item,
-.contact-links .whatsapp-link {
-  box-shadow: 0 4px 12px rgba(23, 54, 93, 0.13);
-  transition: all 0.3s ease;
-}
+    /* Email */
+    .contact-links .contact-item.email-link {
+      background: #17365D;
+      border-color: #294d78;
+    }
 
-/* Common Hover Effect */
-.contact-links .contact-item:hover,
-.contact-links .whatsapp-link:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 7px 18px rgba(23, 54, 93, 0.20);
-}
+    .contact-links .email-link .contact-icon {
+      background: linear-gradient(120deg, #EA4335 0 25%, #4285F4 25% 48%, #FBBC05 48% 68%, #34A853 68% 85%, #FFFFFF 85% 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+    }
 
-/* Email Icon - Multi Colour */
-.contact-links .contact-item:first-child .contact-icon {
-  background: linear-gradient(
-    120deg,
-    #EA4335,
-    #4285F4,
-    #FBBC05,
-    #34A853,
-    #FFFFFF
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-}
+    /* Phone */
+    .contact-links .phone-link .contact-icon {
+      color: #34C759;
+    }
 
-/* Phone Icon - Green */
-.contact-links .contact-item:nth-child(2) .contact-icon {
-  color: #34C759;
-}
+    /* WhatsApp */
+    .contact-links .whatsapp-link {
+      background: #25D366;
+      border-color: #25D366;
+      color: #fff;
+    }
 
-/* LinkedIn Icon - Blue */
-.contact-links .contact-item:nth-child(4) .contact-icon {
-  color: #0A66C2;
-}
+    .contact-links .whatsapp-link:hover {
+      background: #1da851;
+      border-color: #1da851;
+    }
 
-/* GitHub Icon - Navy Blue */
-.contact-links .contact-item:nth-child(5) .contact-icon {
-  color: #17365D;
-}
+    .contact-links .whatsapp-link svg {
+      width: 22px;
+      height: 22px;
+      flex: 0 0 22px;
+    }
 
-/* Back to Top Icon - Navy Blue */
-.contact-links .contact-item:nth-child(6) .contact-icon {
-  color: #17365D;
-}
+    /* LinkedIn */
+    .contact-links .linkedin-link {
+      background: #0A66C2;
+      border-color: #0A66C2;
+    }
+
+    /* GitHub and Back to top */
+    .contact-links .github-link,
+    .contact-links .back-to-top {
+      background: #17365D;
+      border-color: #294d78;
+    }
+
+    @media (max-width: 600px) {
+      .site-logo {
+        height: 40px;
+        max-width: 160px;
+      }
+
+      .contact-panel {
+        padding: 26px 18px;
+      }
+
+      .contact-links a {
+        width: 100%;
+      }
+    }
 
   </style>
 </head>
@@ -225,7 +228,7 @@
       <a class="brand" href="#home" aria-label="Mohan Shrestha Home">
   <img src="logo.png" alt="Mohan Shrestha Logo" class="site-logo">
 </a>
-      <button class="menu" id="menuButton" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <button class="menu" id="menuButton" type="button" aria-label="Toggle navigation" aria-controls="navigation" aria-expanded="false">☰</button>
       <nav id="navigation" aria-label="Main navigation">
         <a href="#about">About</a><a href="#research">Research</a><a href="#writing">Blog</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
       </nav>
@@ -288,9 +291,32 @@
       <div class="container">
         <div class="section-head"><div class="kicker">Ideas in writing</div><h2>Blog & legal insights</h2><p>Use this section for your own articles, case comments, explainers, and research updates.</p></div>
         <div class="blog-grid">
-          <article class="post"><div class="post-top">Administrative Law</div><div class="post-body"><h3>Why Administrative Law Matters for Good Governance</h3><p>A beginner-friendly introduction to administrative power, fairness, accountability, and remedies in Nepal.</p><a class="text-link" href="mailto:shtmohan.law@gmail.com?subject=Administrative%20Law%20article">Request article ↗</a></div></article>
-          <article class="post"><div class="post-top">Rights & Society</div><div class="post-body"><h3>Human Rights in Everyday Public Administration</h3><p>How public decisions can affect dignity, inclusion, equal treatment, and access to services.</p><a class="text-link" href="mailto:shtmohan.law@gmail.com?subject=Human%20Rights%20article"
-          <article class="post"><div class="post-top">Digital Governance</div><div class="post-body"><h3>Law, Technology, and the Digital Public Sphere</h3><p>Questions around online information, responsibility, digital rights, and policy in Nepal.</p><a class="text-link" href="mailto:YOUR_EMAIL@example.com?subject=Digital%20Governance%20article">Request article ↗</a></div></article>
+          <article class="post">
+            <div class="post-top">Administrative Law</div>
+            <div class="post-body">
+              <h3>Why Administrative Law Matters for Good Governance</h3>
+              <p>A beginner-friendly introduction to administrative power, fairness, accountability, and remedies in Nepal.</p>
+              <a class="text-link" href="mailto:shtmohan.law@gmail.com?subject=Administrative%20Law%20article">Request article ↗</a>
+            </div>
+          </article>
+
+          <article class="post">
+            <div class="post-top">Rights & Society</div>
+            <div class="post-body">
+              <h3>Human Rights in Everyday Public Administration</h3>
+              <p>How public decisions can affect dignity, inclusion, equal treatment, and access to services.</p>
+              <a class="text-link" href="mailto:shtmohan.law@gmail.com?subject=Human%20Rights%20article">Request article ↗</a>
+            </div>
+          </article>
+
+          <article class="post">
+            <div class="post-top">Digital Governance</div>
+            <div class="post-body">
+              <h3>Law, Technology, and the Digital Public Sphere</h3>
+              <p>Questions around online information, responsibility, digital rights, and policy in Nepal.</p>
+              <a class="text-link" href="mailto:shtmohan.law@gmail.com?subject=Digital%20Governance%20article">Request article ↗</a>
+            </div>
+          </article>
         </div>
         <p style="color:var(--muted);font-size:.83rem;margin-top:20px">These are sample article ideas, not published articles. Replace them with your own posts when ready.</p>
       </div>
@@ -313,41 +339,46 @@
       </div>
 
       <div class="contact-links">
-        <a href="mailto:shtmohan.law@gmail.com">
-          ✉ &nbsp; shtmohan.law@gmail.com
+        <a href="mailto:shtmohan.law@gmail.com" class="contact-item email-link">
+          <span class="contact-icon" aria-hidden="true">✉</span>
+          <span>shtmohan.law@gmail.com</span>
         </a>
-       
-        <a href="tel:+9779840922850">
-          ☎ &nbsp; 9840922850
+
+        <a href="tel:+9779840922850" class="contact-item phone-link">
+          <span class="contact-icon" aria-hidden="true">☎</span>
+          <span>+977 9840922850</span>
         </a>
-         <a href="https://wa.me/9779840922850"
-   target="_blank"
-   rel="noopener noreferrer"
-   class="whatsapp-link">
 
-  <svg xmlns="http://www.w3.org/2000/svg"
-       width="22" height="22"
-       viewBox="0 0 24 24"
-       fill="currentColor"
-       aria-hidden="true">
-    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.33 4.96L2 22l5.27-1.38a9.9 9.9 0 0 0 4.77 1.22h.01c5.46 0 9.91-4.45 9.91-9.91A9.86 9.86 0 0 0 12.04 2zm0 18.16h-.01a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.13.82.84-3.05-.2-.31a8.2 8.2 0 1 1 6.98 3.86zm4.5-6.14c-.25-.12-1.48-.73-1.71-.81-.23-.08-.4-.12-.57.12-.17.25-.65.81-.8.98-.15.17-.3.19-.55.06-.25-.12-1.05-.39-2-.1-.74-.65-1.23-1.45-1.37-1.7-.14-.25-.01-.39.11-.52.11-.11.25-.29.37-.43.12-.15.16-.25.25-.42.08-.17.04-.32-.02-.44-.06-.12-.57-1.37-.78-1.88-.2-.5-.41-.43-.57-.44h-.49c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.43 1.03 2.6c.12.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.52.6.19 1.15.16 1.58.1.48-.07 1.48-.61 1.69-1.2.21-.59.21-1.1.15-1.2-.06-.1-.23-.16-.48-.28z"/>
-  </svg>
-
-  Chat with me on WhatsApp
-</a>
+        <a href="https://wa.me/9779840922850"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="whatsapp-link">
+          <svg xmlns="http://www.w3.org/2000/svg"
+               viewBox="0 0 24 24"
+               fill="currentColor"
+               aria-hidden="true">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.33 4.96L2 22l5.27-1.38a9.9 9.9 0 0 0 4.77 1.22h.01c5.46 0 9.91-4.45 9.91-9.91A9.86 9.86 0 0 0 12.04 2zm0 18.16h-.01a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.13.82.84-3.05-.2-.31a8.2 8.2 0 1 1 6.98 3.86zm4.5-6.14c-.25-.12-1.48-.73-1.71-.81-.23-.08-.4-.12-.57.12-.17.25-.65.81-.8.98-.15.17-.3.19-.55.06-.25-.12-1.05-.39-2-.1-.74-.65-1.23-1.45-1.37-1.7-.14-.25-.01-.39.11-.52.11-.11.25-.29.37-.43.12-.15.16-.25.25-.42.08-.17.04-.32-.02-.44-.06-.12-.57-1.37-.78-1.88-.2-.5-.41-.43-.57-.44h-.49c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.43 1.03 2.6c.12.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.52.6.19 1.15.16 1.58.1.48-.07 1.48-.61 1.69-1.2.21-.59.21-1.1.15-1.2-.06-.1-.23-.16-.48-.28z"/>
+          </svg>
+          <span>Chat with me on WhatsApp</span>
+        </a>
 
         <a href="https://www.linkedin.com/search/results/people/?keywords=Mohan%20Shrestha"
-           target="_blank" rel="noopener noreferrer">
-          ↗ &nbsp; Find me on LinkedIn
+           target="_blank" rel="noopener noreferrer"
+           class="contact-item linkedin-link">
+          <span class="contact-icon" aria-hidden="true">in</span>
+          <span>Find me on LinkedIn</span>
         </a>
 
         <a href="https://github.com/mohan313-m"
-           target="_blank" rel="noopener noreferrer">
-          ⌘ &nbsp; GitHub: mohan313-m
+           target="_blank" rel="noopener noreferrer"
+           class="contact-item github-link">
+          <span class="contact-icon" aria-hidden="true">⌘</span>
+          <span>GitHub: mohan313-m</span>
         </a>
 
-        <a href="#home">
-          ↑ &nbsp; Back to top
+        <a href="#home" class="contact-item back-to-top">
+          <span class="contact-icon" aria-hidden="true">↑</span>
+          <span>Back to top</span>
         </a>
       </div>
     </div>
@@ -382,6 +413,15 @@ navigation.querySelectorAll('a').forEach(link => {
     menuButton.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
   });
+});
+
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && navigation.classList.contains('open')) {
+    navigation.classList.remove('open');
+    menuButton.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+    menuButton.focus();
+  }
 });
   document.getElementById('year').textContent =
     new Date().getFullYear();
